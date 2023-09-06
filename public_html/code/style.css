@@ -1,0 +1,1071 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ========== END OF RESET ============== */
+
+
+/* ========== general layout and styling ============== */
+
+body {
+    font-family:'Poppins', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+
+header, main > section, footer {
+    padding: 0 60px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    padding: 50px 0 0 20px;
+}
+
+h2 {
+    padding: 10px 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h3 {
+    padding: 10px 0;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 180%;
+}
+
+h5 {
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+h6 {
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+main > section {
+    margin-top: 100px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+
+/* button */
+
+button a {
+    width: 300px;
+    height: 60px;
+    border-radius: 38px;
+    background: #BDD77E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    gap: 10px;
+}
+
+#formbutton {
+    width: 169px;
+    height: 35px;
+    border-radius: 5px;
+    background: #BDD77E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    color: #fff;
+    font-weight: 600;
+    border-color: transparent;
+}
+
+button a:hover {
+    box-shadow: -3px 4px 29px 0px #BDD77E;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+}
+
+
+button p {
+    color:#FFF;
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 10px;
+}
+
+#we div button {    /* section3 we provide */
+    width: 260px;
+    height: 45px;
+    background:#FFF;
+    border-radius: 30px;
+}
+
+#we div button:hover {
+    box-shadow: 0px 4px 11px 2px rgba(255, 255, 255, 0.48);
+}
+
+#we div button p {
+    font-size: 14px;
+    color: #82B43D;
+    padding-right: 10px;
+}
+
+.violin button {   /* section4 onlinecourses */
+    height: 50px;
+    width: 260px;
+    margin-top: 40px;
+}
+
+#error button img {    /* 404 page */
+    transform: rotate(180deg);
+}
+
+#error button {
+    border-radius: 16px;
+    background: #8ABE41;
+    gap: 10px;
+}
+
+.explore a, #vm a {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    gap: 6px;
+    background: none;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.explore p, #vm p {
+    color: #8ABE41;
+    font-size: 16px;
+    font-weight: 400;
+    padding-right: 0px;
+}
+
+.explore a:hover p, #vm a:hover p {
+    color: #B57BC0
+}
+
+.explore a:hover svg, #vm a:hover svg {
+    fill: #B57BC0
+}
+
+#vm {
+    justify-content: flex-end;
+    width: 100%;
+}
+
+#vm a {
+    justify-content: flex-end;
+    padding: 30px 60px 0 0 ;
+}
+
+.explore a:hover, #vm a:hover {
+    box-shadow: none;
+}
+
+#coursesection ul button {
+    border-radius: 22px;
+    background: #8ABE41;
+    padding: 5px 20px;
+    color: #FFF;
+    font-size: 18px;
+}
+
+#coursesection ul button:hover {
+    background: #FFF;
+    border: 2px solid #8ABE41;
+    padding: 3px 18px;
+    color: #8ABE41;
+}
+
+
+/* ========== header ============== */
+
+header {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    padding: 10px 60px;
+    gap: 30vw;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.16);
+
+}
+
+header > nav > ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+
+/* ========== footer ============== */
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 60px;
+}
+
+#social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#social p {
+    font-size: 16px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+footer li {
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+main + div {
+    width: 100vw;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.23);
+    margin-top: 60px;
+}
+
+
+/* ========== homepage main section ============== */
+
+/* section1 */
+
+
+.images {
+    width: 120px;
+    height: 418px;
+    overflow: hidden; /* Hide any overflow from the image */
+    border-radius: 23px;
+    display: flex; /* Enable flex layout for centering the image */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+
+}
+
+figure {
+    position: relative;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0 20px 0;
+    width: 100%;
+    height: 200px;
+    border-radius: 0px 0px 23px 23px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.0) 100%);
+}
+
+.figwrap {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    justify-content: right;
+    padding-right: 20px;
+}
+
+.figwrap p {
+    font-size: 0px;
+    font-weight: 500;
+    color: #FFF;
+}
+
+.figwrap img {
+    height: 0px;
+    padding-bottom: 12px;
+}
+
+figure .images, figure figcaption, figure .figwrap p, figure .figwrap img,.question div,.question div + p, .line {
+    transition: all 0.3s ease-in-out;
+}
+
+figure:hover .images {
+    width: 260px;
+}
+figure:hover figcaption {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.79) 100%);
+    font-size: 23px;
+}
+figure:hover .figwrap p {
+    font-size: 23px;
+}
+figure:hover .figwrap img {
+    height: 16px;
+}
+
+#img1:hover + div #line1 {
+    width: 100px;
+    background: #8ABE41;
+}
+
+.fourimages {
+    display: flex;
+    gap: 20px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.search {
+    display: flex;
+    align-items: center;
+    height: 274px;
+    justify-content: right;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+form *:focus {
+    outline: none;
+}
+
+form input, form button {
+    border: 0px;
+}
+
+#text {
+    width: 360px;
+    height: 60px;
+    background: #FFF;
+    box-shadow: -3px 4px 29px 0px rgba(0, 0, 0, 0.11);
+
+    font-size: 16px;
+    font-weight: 500;
+    padding-left: 20px;
+
+    display: flex;
+    align-items: center;
+}
+
+input::placeholder {
+    color: #D4D5D9;
+    font-size: 16px;
+    font-weight: 500;
+}
+#searchicon {
+    width: 80px;
+    height: 80px;
+    background: #BDD77E;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    width: 73px;
+    height: 6px;
+    border-radius: 13px;
+    background: #D4D5D9;
+    margin: 30px 0;
+}
+
+#section1 .main + div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 40px;
+}
+
+/* section2 who-are-we */
+
+#who-are-we {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#who-are-we section {
+    max-width: 50vw;
+}
+
+svg {
+    width: 14px;
+    height: 20px;
+    fill: #8ABE41;
+}
+
+#who-are-we section h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+#who-are-we section h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#bird {
+    padding: 30px 40px;
+}
+
+
+/* section3 we-provide */
+
+#we-provide {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+}
+
+#we {
+    display: flex;
+    color:#FFF;
+    width: 80vw;
+    border-radius: 43px;
+    background: #8ABE41;
+    padding: 40px 60px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#wefeatures {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 50%;
+}
+
+#we div h2 {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1.44px;
+}
+
+#we ul li img {
+    padding: 5px;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+
+#we ul li h3 {
+    font-size: 20px;
+    padding-bottom: 0;
+}
+
+#we ul li p {
+    font-size: 14px;
+}
+
+/* demo button */
+
+/* Styles for the overlay */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Styles for the popup */
+.popup {
+    display: none;
+}
+
+.popup #popupdiv {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.60);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    color: #000;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.popup form {
+    background-color: #FFF;
+    width: 70vw;
+    height: 50vh;
+    border-radius: 58px;
+    justify-content: center;
+}
+
+.popup form input {
+    border: 1px solid #979EB4;
+    margin-left: 10px;
+    width: 260px;
+    border-radius: 2px;
+}
+
+.popup form ul {
+    display: grid;
+    gap: 20px;
+}
+
+.popup form li {
+    display: flex;
+}
+
+.close {
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    padding: 15% 18%;
+    font-size: 20px;
+    position: absolute;
+}
+
+
+/* section4 onlinecourses */
+
+#onlinecourses {
+    padding: 0;
+}
+
+#onlinecourses ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px 0;
+}
+
+#onlinecourses ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#onlinecourses ul li div {
+    width: 100%;
+    height: 3px;
+    background: rgba(138, 190, 65, 0.00);
+}
+
+#onlinecourses ul li:hover div {
+    background: #8ABE41;
+}
+
+#onlinecourses h2 {
+    text-align: center;
+}
+
+.coursesbutton {
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+#onlinecourses section {
+    background: rgba(138, 190, 65, 0.30);
+    padding: 60px 60px 240px 60px;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+#onlinecourses section h3 {
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    float: left;
+    color: #275800;
+}
+
+#onlinecourses section .instrument {
+    position: absolute;
+    margin-left: 35%;
+}
+
+#onlinecourses section .instrument {
+    border-radius: 32px;
+    background:#FFF;
+    box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.07);
+    width: 50%;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+
+/* section5 review */
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+#review ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#review p {
+    border-radius: 23px;
+    background:#FFF;
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.13);
+    padding: 30px;
+    width: 24vw;
+    height: 266px;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+
+
+span {
+    font-weight: 600;
+}
+
+/* section6 faq */
+
+#faq {
+    background: rgba(138, 190, 65, 0.30);
+    padding: 40px 0;
+    min-height: 340px;
+}
+
+#faq h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#faq ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    gap: 34px;
+}
+
+.question {
+    border-radius: 21px;
+    background: var(--major-project, #FFF);
+    padding: 18px 23px;
+    width: 60vw;
+}
+
+.question p {
+    font-size: 16px;
+}
+
+.question div {
+    background: #D3D3D3;
+    height: 0px;
+}
+
+.question:hover div {
+    height: 1px;
+}
+
+.question div + p {
+    color: #717171;
+    font-size: 0px;
+}
+
+.question:hover div + p {
+    font-size: 14px;
+}
+
+#faq div p {
+    color: #8ABE41;
+    font-size: 16px;
+}
+
+/* ========== courses page ============== */
+
+#coursesection{
+    margin-top: 0;
+    margin-bottom: 100px;
+}
+
+.bgimage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.bgimage h1 {
+    padding-right: 160px;
+    padding-left: 0;
+    font-family: 'Comic Neue', cursive;
+    font-size: 38px;
+    font-weight: 500;
+    letter-spacing: 3.84px;
+
+}
+
+.bgimage + div, #banner + div {
+    display: grid;
+    justify-items: center;
+}
+
+#form {
+    justify-content: center;
+    width: 100%;
+}
+
+#input {
+    padding: 14px 18px;
+    border-radius: 29px;
+    border: 2px solid rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 480px;
+}
+
+#button {
+    background: none;
+    margin-left: -48px;
+}
+
+
+.bgimage + div form input::placeholder, #banner + div form input::placeholder {
+    color: rgba(0, 0, 0, 0.38);
+    font-size: 16px;
+}
+
+#coursesection ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+
+#coursesection + ul li div {
+    width: 300px;
+    height: 200px;
+    border-radius: 21px 21px 0px 0px;
+    background: rgba(138, 190, 65, 0.24);
+    margin-bottom: 20px;
+
+}
+
+#coursecards {
+    margin-top: -132px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 50px;
+}
+
+#coursesection + ul {
+    padding: 60px;
+    background: rgba(189, 215, 126, 0.30);
+}
+
+#coursesection + ul li section h2, #class ul li section h2 {
+    font-size: 18px;
+    padding-bottom: 0px;
+}
+
+#coursesection + ul li section p, #class ul li section p {
+    font-size: 14px;
+}
+
+#coursesection + ul li section, #class ul li section {
+    border-radius: 21px;
+    background: var(--major-project, #FFF);
+    box-shadow: 0px 4px 87px 0px rgba(0, 0, 0, 0.13);
+
+    padding: 16px 16px 50px 16px;
+
+}
+
+/* ========== class page ============== */
+
+#classsection div:first-child {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+#classsection div:first-child p {
+    color: #72973E;
+    font-size: 16px;
+}
+
+#classsection div + div div {
+    width: 827px;
+    height: 379px;
+    border-radius: 16px;
+    background: rgba(138, 190, 65, 0.24);
+
+}
+
+#classsection div + div {
+    display: flex;
+    align-items: center;
+    gap: 10vw;
+    padding: 0 60px 20px 30px;
+}
+
+#classsection h2, #classsection h2 + p {
+    padding: 0 0 0 60px;
+}
+
+#classsection h2 {
+    font-size: 20px;
+}
+
+#classsection h2 + p {
+    font-size: 16px;
+}
+
+#class ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+#class ul p {
+    padding: 0;
+}
+
+#class ul li div {
+    width: 80px;
+    height: 60px;
+    border-radius: 88.5px;
+    background: rgba(138, 190, 65, 0.24);
+
+}
+
+#class ul li {
+    width: 300px;
+}
+
+/* ========== faq page ============== */
+
+#banner h1 {
+    padding: 0;
+}
+
+#banner {
+    display: grid;
+    justify-items: center;
+    padding-bottom: 40px;
+}
+
+#banner img {
+    padding-left: 20em;
+}
+
+#question {
+    display: grid;
+    justify-items: center;
+    gap: 30px;
+    padding: 40px 0 0 0;
+}
+
+#question li {
+    width: 60vw;
+    border-radius: 21px;
+    border: 1.5px solid #D4D5D9;
+    padding: 20px;
+}
+
+#question li div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.qst {
+    justify-content: space-between;
+}
+
+.answer div {
+    height: 1px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.23);
+    margin: 10px 0;
+}
+
+.answer p {
+    color: rgba(0, 0, 0, 0.56);
+}
+
+#question p {
+    font-size: 16px;
+}
+
+/* ========== aboutus page ============== */
+
+#aboutussection {
+    display: grid;
+    justify-items: center;
+}
+
+#aboutussection h1 {
+    padding: 0;
+}
+
+#aboutussection img {
+    padding-left: 600px;
+}
+
+#aboutussection + section p + h2 {
+    padding-top: 40px;
+}
+
+#aboutussection + section {
+    padding: 0 90px ;
+}
+
+#community {
+    background: rgba(138, 190, 65, 0.24);
+    padding: 60px;
+}
+
+#community h2 {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#community ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 30px;
+}
+
+
+#community ul li {
+    display: grid;
+    justify-items: center;
+    border-radius: 7px;
+    background: var(--major-project, #FFF);
+    width: 60%;
+    padding: 30px;
+}
+
+#community ul li div {
+    width: 100px;
+    height: 100px;
+    background-color: #8ABE41;
+    border-radius: 50%;
+}
+
+#community p {
+    font-size: 14px;
+}
+
+#span1 {
+    color: #8ABE41;
+}
+
+#span2 {
+    color: #33A8FF;
+}
+
+#getintouch {
+    padding: 0 90px;
+}
+
+/* ========== 404 page ============== */
+
+#error {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15vw;
+    margin-top: 30vh;
+}
+
+#error h1 {
+    color: #74A72E;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 3.2px;
+    padding-left: 0;
+}
+
+/* ========== resposive styling ============== */
+
+/* break point 1 */
+
+@media (min-width: 700px) {
+
+}
