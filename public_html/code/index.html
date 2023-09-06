@@ -43,16 +43,18 @@
                     <div> <!-- headline and search bar section-->
                         <h1>"Empowering Musical Excellence, <br> Note at a Time"</h1>
                         <div class="search"> <!-- search section-->
-                            <form action="/search" method="GET">
-                                <input type="text" name="query" id="text" placeholder="Search...">
-                                <button type="submit" id="searchicon"><img src="../assests/Search.png" alt="" height="60"></button>
-                            </form>
+                            <div id="text">
+                                <p>Search</p>
+                            </div>
+                            <div id="searchicon">
+                                <img src="../assests/Search.png" alt="" height="60">
+                            </div>
                         </div>
                     </div>
                     <ul class="fourimages"> <!-- section of 4 images-->
                         <li>
-                            <figure id="img1">
-                                <div id="pic1" class="images"><!-- image container-->
+                            <figure>
+                                <div class="images"><!-- image container-->
                                     <img src="../assests/violin.png" alt="" height="515">
                                 </div>
                                 <figcaption>
@@ -64,7 +66,7 @@
                             </figure>
                         </li>
                         <li>
-                            <figure id="img2">
+                            <figure>
                                 <div class="images"><!-- image container-->
                                     <img src="../assests/piano.png" alt="" height="515">
                                 </div>
@@ -77,7 +79,7 @@
                             </figure>
                         </li>
                         <li>
-                            <figure id="img3">
+                            <figure>
                                 <div class="images"><!-- image container-->
                                     <img src="../assests/guitar.png" alt="" height="515">
                                 </div>
@@ -90,7 +92,7 @@
                             </figure>
                         </li>
                         <li>
-                            <figure id="img4">
+                            <figure>
                                 <div class="images"><!-- image container-->
                                     <img src="../assests/mic.png" alt="" height="515">
                                 </div>
@@ -105,17 +107,17 @@
                     </ul>
                 </div>
                 <div><!-- 4 dashed lines-->
-                    <div class="line" id="line1"></div>
-                    <div class="line" id="line2"></div>
-                    <div class="line" id="line3"></div>
-                    <div class="line" id="line4"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
                 </div>
-                <button class="button"><!-- view course page button-->
+                <div class="button"><!-- view course page button-->
                     <a href="course.html">
                         <p>View All Courses</p>
                         <img src="../assests/arrow.png" alt="" height="20">
                     </a>
-                </button>
+                </div>
             </section>
             <section id="who-are-we"><!-- who are we section-->
                 <section>
@@ -134,14 +136,12 @@
                         their techniques, and uncover the melodies that resonate within them. Join us and 
                         discover the joy of creating music that touches the soul and lasts a lifetime.
                     </p>
-                    <button class="explore"> <!-- wrapper for explore more text-->
+                    <div class="explore"> <!-- wrapper for explore more text-->
                         <a href="aboutus.html">
                             <p>Explore more </p>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 16" >
-                                <path d="M23.7071 8.70711C24.0976 8.31658 24.0976 7.68342 23.7071 7.29289L17.3431 0.928932C16.9526 0.538408 16.3195 0.538408 15.9289 0.928932C15.5384 1.31946 15.5384 1.95262 15.9289 2.34315L21.5858 8L15.9289 13.6569C15.5384 14.0474 15.5384 14.6805 15.9289 15.0711C16.3195 15.4616 16.9526 15.4616 17.3431 15.0711L23.7071 8.70711ZM0 9H23V7H0V9Z"/>
-                            </svg>
+                            <img src="../assests/linearrow.png" alt="" height="14">
                         </a>
-                    </button>
+                    </div>
                 </section>
                 <img id="bird" src="../assests/bird.png" alt="" height="250">
             </section>
@@ -153,40 +153,12 @@
                             our student’s <br>
                             journey
                         </h2>
-                        <!-- demo button -->
-                        <button id="popupBtn" class="button">
+                        <div class="button">
                             <p>Book a FREE Demo now</p>
                             <img src="../assests/arrowgreen.png" alt="" height="14">
-                        </button>
-                        <div id="popup" class="popup">
-                            <div id="popupdiv">
-                                <span class="close" id="closeBtn">&times;</span>
-                                <div class="popup-content">
-                                    <form id="popupform" action="submit.php" method="POST">
-                                        <ul>
-                                            <li>
-                                                <label for="name">Name:</label>
-                                                <input type="text" id="name" name="name" required>
-                                            </li>
-                                            <li>
-                                                <label for="phone">Phone Number:</label>
-                                                <input type="tel" id="phone" name="phone" required>
-                                            </li>
-                                            <li>
-                                                <label for="email">Email:</label>
-                                                <input type="email" id="email" name="email" required>
-                                            </li>
-                                            <li>
-                                                <input id="formbutton" type="submit" value="Submit">
-                                            </li>
-                                        </ul>
-                                    </form>
-                                    <!-- The form will be inserted here via JavaScript -->
-                                </div>
-                            </div>
                         </div>
                     </div>
-                    <ul id="wefeatures"><!-- grid-->
+                    <ul><!-- grid-->
                         <li>
                             <img src="../assests/class.png" alt="" height="30">
                             <h3>Online and In-person Classes</h3>
@@ -223,28 +195,28 @@
             </section>
             <section id="onlinecourses"> <!-- section displying introdution to online courses-->
                 <h2>Online courses</h2>
-                <ul id="instrumentButtons">
+                <ul>
                     <li>
-                        <button id="violinheading" class="coursesbutton">Violin</button>
-                        <div class="highlighter"></div><!-- underline -->
+                        <h3>Violin</h3>
+                        <div></div><!-- underline -->
                     </li>
                     <li>
-                        <button id="guitarheading" class="coursesbutton">Guitar</button>
-                        <div class="highlighter"></div><!-- underline -->
+                        <h3>Guitar</h3>
+                        <div></div><!-- underline -->
                     </li>
                     <li>
-                        <button id="pianoheading" class="coursesbutton">Piano</button>
-                        <div class="highlighter"></div><!-- underline -->
+                        <h3>Piano</h3>
+                        <div></div><!-- underline -->
                     </li>
                     <li>
-                        <button id="vocalheading" class="coursesbutton">Vocal</button>
-                        <div class="highlighter"></div><!-- underline -->
+                        <h3>Vocal</h3>
+                        <div></div><!-- underline -->
                     </li>
                 </ul>
                 <section>
-                    <h3 id="courseTitle">Western Violin <br>Classes</h3>
-                    <div class="instrument">
-                        <p id="courseDescription">
+                    <h4>Western Violin <br>Classes</h4>
+                    <div class="violin">
+                        <p>
                             Embark on a musical adventure with our Western Violin classes at the music academy!
                             Whether you're starting from scratch or already have a love for melodies, our classes 
                             are tailored for all levels. From holding the violin to creating beautiful tunes, our 
@@ -252,112 +224,32 @@
                              Western violin and unlock 
                             your musical potential!
                         </p>
-                        <button class="button"><!-- button -->
+                        <div class="button"><!-- button -->
                             <a href="course.html">
                                 <p>View Course</p>
-                                <img src="../assests/arrow.png" alt="" height="18">
+                                <img src="../assests/arrow.png" alt="" height="14">
                             </a>
-                        </button>
+                        </div>
                     </div>
                 </section>
             </section>
             <section id="review">
                 <h2>Parent’s Review</h2>
-                <ul id="reviewList" class="review-list">
-                    <li class="review-item">
-                        <p>
-                            My daughter (Sarada Jayaraman, 
-                            Grade 6 Keyboard student) is very 
-                            happy with the keyboard lessons! 
-                            The teacher is very friendly, very 
-                            kind and he does his job very 
-                            professionally! I will recommend 
-                            them to any of my friends who 
-                            want their child to learn from the 
-                            best!<br>
-                            <span>- Priya Jayaraman (mother)</span>
-                        </p>
-                    </li>
-                    <li class="review-item">
-                        <p>
-                            Enrolling my daughter in violin classes at 
-                            this academy was the best decision. The teachers 
-                            have a remarkable ability to connect with young 
-                            learners, making the lessons engaging and effective. 
-                            Her newfound passion for the violin is truly 
-                            heartwarming<br>
-                            <span>- Jeeju jhon (Father)</span>
-                        </p>
-                    </li>
-                    <li class="review-item">
-                        <p>
-                            My son is taking both violin and guitar lessons 
-                            here, and we couldn't be happier. The academy's 
-                            flexibility to offer both instruments in one place 
-                            is fantastic. The instructors' dedication and the academy's 
-                            warm environment have fostered a genuine love for music in him.<br>
-                            <span>- Latha K P (mother)</span>
-                        </p>
-                    </li>
-                    <li class="review-item">
-                        <p>
-                            The Academy of Musical Instruments has been an absolute blessing 
-                            for my daughter's piano journey. The teachers are not only skilled 
-                            but incredibly patient, making the learning process enjoyable. We're 
-                            seeing remarkable progress, and the structured curriculum keeps her motivated.<br>
-                            <span>- Jaya Jayaraman (mother)</span>
-                        </p>
-                    </li>
-                    <li class="review-item">
-                        <p>
-                            The Academy of Musical Instruments provides top-notch guitar instruction. My son's 
-                            skills have grown exponentially under their guidance. The faculty's expertise and 
-                            personalized attention have truly made a difference in his playing.<br>
-                            <span>- Jeena mohan (mother)</span>
-                        </p>
-                    </li>
-                    <li class="review-item">
-                        <p>
-                            As a parent, I appreciate the convenience of having both piano and guitar lessons 
-                            under one roof. The instructors' dedication and ability to adapt to my kids' learning 
-                            styles have made learning these instruments a breeze.<br>
-                            <span>- Latha K P (mother)</span>
-                        </p>
-                    </li>
-                    <li class="review-item">
-                        <p>
-                            My daughter's piano lessons at this academy have been exceptional. The structured 
-                            approach and encouragement from the instructors have built her confidence. She looks 
-                            forward to every lesson!<br>
-                            <span>- Abdhul (Father)</span>
-                        </p>
-                    </li>
-                    <li class="review-item">
-                        <p>
-                            The Academy of Musical Instruments has ignited a genuine passion for music in my son. 
-                            His guitar lessons have been transformative, and I'm amazed by the progress he's made. 
-                            The instructors' expertise and enthusiasm are truly commendable.<br>
-                            <span>- Smitha Manoj (mother)</span>
-                        </p>
-                    </li>
-                    <li class="review-item">
-                        <p>
-                            My son is taking both violin and guitar lessons 
-                            here, and we couldn't be happier. The academy's 
-                            flexibility to offer both instruments in one place 
-                            is fantastic. The instructors' dedication and the academy's 
-                            warm environment have fostered a genuine love for music in him.<br>
-                            <span>- Latha K P (mother)</span>
-                        </p>
-                    </li>
-                </ul>
+                <p>
+                    My daughter (Sarada Jayaraman, 
+                    Grade 6 Keyboard student) is very 
+                    happy with the keyboard lessons! 
+                    The teacher is very friendly, very 
+                    kind and he does his job very 
+                    professionally! I will recommend 
+                    them to any of my friends who 
+                    want their child to learn from the 
+                    best!<br>
+                    <span>- Sheeba Jayaraman (mother)</span>
+                </p>
                 <div class="arrow"> <!-- wrapper for right and left arrow -->
-                    <button id="previous">
-                        <img src="../assests/leftarrow.png" alt="" height="16">
-                    </button>
-                    <button id="next">
-                        <img src="../assests/arrowgreen.png" alt="" height="16">
-                    </button>
+                    <img src="../assests/leftarrow.png" alt="" height="16">
+                    <img src="../assests/arrowgreen.png" alt="" height="16">
                 </div>
             </section>
             <section id="faq"> <!-- section showing some sample faq questions -->
@@ -392,18 +284,14 @@
                             Online class for electronic keyboard, piano and violin by Iype Mathew </p>
                     </li>
                 </ul>
-                <button id="vm"> <!-- wrapper for view more text -->
+                <div id="vm"> <!-- wrapper for view more text -->
                     <a href="faq.html">
                         <p>View more</p>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 16" >
-                            <path d="M23.7071 8.70711C24.0976 8.31658 24.0976 7.68342 23.7071 7.29289L17.3431 0.928932C16.9526 0.538408 16.3195 0.538408 15.9289 0.928932C15.5384 1.31946 15.5384 1.95262 15.9289 2.34315L21.5858 8L15.9289 13.6569C15.5384 14.0474 15.5384 14.6805 15.9289 15.0711C16.3195 15.4616 16.9526 15.4616 17.3431 15.0711L23.7071 8.70711ZM0 9H23V7H0V9Z"/>
-                        </svg>
+                        <img src="../assests/linearrow.png" alt="" height="16">
                     </a>
-                </button>
+                </div>
             </section>
         </main>
-
-        <script src="script.js"></script>
 
         <footer><!-- footer -->
             <div>

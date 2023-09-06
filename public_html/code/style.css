@@ -69,7 +69,9 @@ a {
 
 h1 {
     font-size: 32px;
+    font-style: normal;
     font-weight: 600;
+    line-height: normal;
     padding: 50px 0 0 20px;
 }
 
@@ -89,15 +91,6 @@ p {
     line-height: 180%;
 }
 
-h5 {
-    font-weight: 600;
-    padding-bottom: 10px;
-}
-h6 {
-    font-size: 14px;
-    padding-bottom: 5px;
-}
-
 main > section {
     margin-top: 100px;
 }
@@ -106,142 +99,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-items: center;
-}
-
-
-/* button */
-
-button a {
-    width: 300px;
-    height: 60px;
-    border-radius: 38px;
-    background: #BDD77E;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px 0;
-    gap: 10px;
-}
-
-#formbutton {
-    width: 169px;
-    height: 35px;
-    border-radius: 5px;
-    background: #BDD77E;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 30px 0;
-    color: #fff;
-    font-weight: 600;
-    border-color: transparent;
-}
-
-button a:hover {
-    box-shadow: -3px 4px 29px 0px #BDD77E;
-}
-
-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: none;
-    border: none;
-}
-
-
-button p {
-    color:#FFF;
-    font-size: 18px;
-    font-weight: 500;
-    padding-right: 10px;
-}
-
-#we div button {    /* section3 we provide */
-    width: 260px;
-    height: 45px;
-    background:#FFF;
-    border-radius: 30px;
-}
-
-#we div button:hover {
-    box-shadow: 0px 4px 11px 2px rgba(255, 255, 255, 0.48);
-}
-
-#we div button p {
-    font-size: 14px;
-    color: #82B43D;
-    padding-right: 10px;
-}
-
-.violin button {   /* section4 onlinecourses */
-    height: 50px;
-    width: 260px;
-    margin-top: 40px;
-}
-
-#error button img {    /* 404 page */
-    transform: rotate(180deg);
-}
-
-#error button {
-    border-radius: 16px;
-    background: #8ABE41;
-    gap: 10px;
-}
-
-.explore a, #vm a {
-    display: flex;
-    align-items: center;
-    padding: 10px 0;
-    gap: 6px;
-    background: none;
-    margin: 0;
-    width: 100%;
-    height: 100%;
-}
-.explore p, #vm p {
-    color: #8ABE41;
-    font-size: 16px;
-    font-weight: 400;
-    padding-right: 0px;
-}
-
-.explore a:hover p, #vm a:hover p {
-    color: #B57BC0
-}
-
-.explore a:hover svg, #vm a:hover svg {
-    fill: #B57BC0
-}
-
-#vm {
-    justify-content: flex-end;
-    width: 100%;
-}
-
-#vm a {
-    justify-content: flex-end;
-    padding: 30px 60px 0 0 ;
-}
-
-.explore a:hover, #vm a:hover {
-    box-shadow: none;
-}
-
-#coursesection ul button {
-    border-radius: 22px;
-    background: #8ABE41;
-    padding: 5px 20px;
-    color: #FFF;
-    font-size: 18px;
-}
-
-#coursesection ul button:hover {
-    background: #FFF;
-    border: 2px solid #8ABE41;
-    padding: 3px 18px;
-    color: #8ABE41;
 }
 
 
@@ -262,7 +119,6 @@ header > nav > ul {
     align-items: center;
     gap: 24px;
 }
-
 
 /* ========== footer ============== */
 
@@ -286,7 +142,11 @@ footer p {
     font-size: 12px;
 }
 
-footer li {
+footer h5 {
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+footer h6, footer li {
     font-size: 14px;
     padding-bottom: 5px;
 }
@@ -297,7 +157,6 @@ main + div {
     background: rgba(0, 0, 0, 0.23);
     margin-top: 60px;
 }
-
 
 /* ========== homepage main section ============== */
 
@@ -348,7 +207,7 @@ figcaption {
     padding-bottom: 12px;
 }
 
-figure .images, figure figcaption, figure .figwrap p, figure .figwrap img,.question div,.question div + p, .line {
+figure .images, figure figcaption, figure .figwrap p, figure .figwrap img,.question div,.question div p {
     transition: all 0.3s ease-in-out;
 }
 
@@ -364,11 +223,6 @@ figure:hover .figwrap p {
 }
 figure:hover .figwrap img {
     height: 16px;
-}
-
-#img1:hover + div #line1 {
-    width: 100px;
-    background: #8ABE41;
 }
 
 .fourimages {
@@ -388,38 +242,21 @@ figure:hover .figwrap img {
     height: 274px;
     justify-content: right;
 }
-
-form {
-    display: flex;
-    align-items: center;
-}
-
-form *:focus {
-    outline: none;
-}
-
-form input, form button {
-    border: 0px;
-}
-
 #text {
     width: 360px;
     height: 60px;
     background: #FFF;
     box-shadow: -3px 4px 29px 0px rgba(0, 0, 0, 0.11);
 
+    color: #D4D5D9;
     font-size: 16px;
+    font-style: normal;
     font-weight: 500;
+    line-height: normal;
     padding-left: 20px;
 
     display: flex;
     align-items: center;
-}
-
-input::placeholder {
-    color: #D4D5D9;
-    font-size: 16px;
-    font-weight: 500;
 }
 #searchicon {
     width: 80px;
@@ -429,6 +266,36 @@ input::placeholder {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.button {
+    width: 300px;
+    height: 60px;
+    border-radius: 38px;
+    background: #BDD77E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    gap: 10px;
+}
+
+.button:hover {
+    box-shadow: -3px 4px 29px 0px #BDD77E;
+}
+
+.button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button p {
+    color:#FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .line {
@@ -459,11 +326,19 @@ input::placeholder {
     max-width: 50vw;
 }
 
-svg {
-    width: 14px;
-    height: 20px;
-    fill: #8ABE41;
+.explore a {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    gap: 6px;
 }
+.explore p {
+    color: #8ABE41;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.explore 
 
 #who-are-we section h2 {
     font-size: 20px;
@@ -477,7 +352,6 @@ svg {
 #bird {
     padding: 30px 40px;
 }
-
 
 /* section3 we-provide */
 
@@ -495,20 +369,39 @@ svg {
     background: #8ABE41;
     padding: 40px 60px;
     align-items: center;
-    justify-content: space-between;
 }
 
-#wefeatures {
+#we ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     max-width: 50%;
 }
 
+#we div {
+    width: 80%;
+}
+
 #we div h2 {
     font-size: 48px;
     font-weight: 700;
     letter-spacing: 1.44px;
+}
+
+#we div .button {
+    width: 260px;
+    height: 45px;
+    background:#FFF;
+}
+
+#we div .button:hover {
+    box-shadow: 0px 4px 11px 2px rgba(255, 255, 255, 0.48);
+}
+
+#we div .button p {
+    font-size: 14px;
+    color: #82B43D;
+    padding-right: 10px;
 }
 
 #we ul li img {
@@ -525,74 +418,6 @@ svg {
 #we ul li p {
     font-size: 14px;
 }
-
-/* demo button */
-
-/* Styles for the overlay */
-.overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-/* Styles for the popup */
-.popup {
-    display: none;
-}
-
-.popup #popupdiv {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgba(0, 0, 0, 0.60);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    color: #000;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    height: 100%;
-    width: 100%;
-}
-
-
-.popup form {
-    background-color: #FFF;
-    width: 70vw;
-    height: 50vh;
-    border-radius: 58px;
-    justify-content: center;
-}
-
-.popup form input {
-    border: 1px solid #979EB4;
-    margin-left: 10px;
-    width: 260px;
-    border-radius: 2px;
-}
-
-.popup form ul {
-    display: grid;
-    gap: 20px;
-}
-
-.popup form li {
-    display: flex;
-}
-
-.close {
-    top: 0;
-    right: 0;
-    cursor: pointer;
-    padding: 15% 18%;
-    font-size: 20px;
-    position: absolute;
-}
-
 
 /* section4 onlinecourses */
 
@@ -615,7 +440,7 @@ svg {
 }
 
 #onlinecourses ul li div {
-    width: 100%;
+    width: 45px;
     height: 3px;
     background: rgba(138, 190, 65, 0.00);
 }
@@ -628,10 +453,8 @@ svg {
     text-align: center;
 }
 
-.coursesbutton {
+#onlinecourses ul li h3 {
     padding-bottom: 5px;
-    font-size: 18px;
-    font-weight: 500;
 }
 
 
@@ -639,23 +462,22 @@ svg {
     background: rgba(138, 190, 65, 0.30);
     padding: 60px 60px 240px 60px;
     position: relative;
-    margin-bottom: 200px;
+    margin-bottom: 300px;
 }
 
-#onlinecourses section h3 {
+#onlinecourses section h4 {
     font-size: 26px;
     font-weight: 600;
     letter-spacing: 1px;
     float: left;
-    color: #275800;
 }
 
-#onlinecourses section .instrument {
+#onlinecourses section .violin {
     position: absolute;
     margin-left: 35%;
 }
 
-#onlinecourses section .instrument {
+#onlinecourses section .violin {
     border-radius: 32px;
     background:#FFF;
     box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.07);
@@ -664,6 +486,10 @@ svg {
     margin-top: 50px;
 }
 
+.violin .button {
+    height: 50px;
+    width: 260px;
+}
 
 /* section5 review */
 
@@ -674,24 +500,15 @@ svg {
     padding: 20px 0;
 }
 
-#review ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-
 #review p {
     border-radius: 23px;
     background:#FFF;
     box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.13);
     padding: 30px;
-    width: 24vw;
-    height: 266px;
+    width: 30vw;
     font-size: 16px;
     margin: 20px 0;
 }
-
-
 
 span {
     font-weight: 600;
@@ -725,7 +542,7 @@ span {
 }
 
 .question p {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .question div {
@@ -743,7 +560,15 @@ span {
 }
 
 .question:hover div + p {
-    font-size: 14px;
+    font-size: 12px;
+}
+
+#vm a {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    padding: 30px 60px 0 0 ;
 }
 
 #faq div p {
@@ -755,7 +580,6 @@ span {
 
 #coursesection{
     margin-top: 0;
-    margin-bottom: 100px;
 }
 
 .bgimage {
@@ -780,26 +604,19 @@ span {
     justify-items: center;
 }
 
-#form {
+.bgimage + div div, #banner + div div {
+    display: flex;
+    gap: 140px;
+    align-items: center;
     justify-content: center;
-    width: 100%;
-}
 
-#input {
-    padding: 14px 18px;
     border-radius: 29px;
     border: 2px solid rgba(0, 0, 0, 0.08);
-    width: 100%;
-    max-width: 480px;
+    background: var(--major-project, #FFF);
+    padding: 10px 40px;
 }
 
-#button {
-    background: none;
-    margin-left: -48px;
-}
-
-
-.bgimage + div form input::placeholder, #banner + div form input::placeholder {
+.bgimage + div div p, #banner + div div p {
     color: rgba(0, 0, 0, 0.38);
     font-size: 16px;
 }
@@ -809,6 +626,20 @@ span {
     justify-content: center;
     gap: 20px;
     padding: 40px 0;
+}
+
+#coursesection ul li {
+    border-radius: 22px;
+    background: #8ABE41;
+    padding: 5px 20px;
+    color: #FFF;
+}
+
+#coursesection ul li:hover {
+    background: #FFF;
+    border: 2px solid #8ABE41;
+    padding: 3px 18px;
+    color: #8ABE41;
 }
 
 
@@ -821,17 +652,14 @@ span {
 
 }
 
-#coursecards {
-    margin-top: -132px;
+#coursesection + ul {
+    padding: 60px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     gap: 50px;
-}
-
-#coursesection + ul {
-    padding: 60px;
     background: rgba(189, 215, 126, 0.30);
+
 }
 
 #coursesection + ul li section h2, #class ul li section h2 {
@@ -1054,18 +882,21 @@ span {
     margin-top: 30vh;
 }
 
+#error .button img {
+    transform: rotate(180deg);
+}
+
+#error .button {
+    border-radius: 16px;
+    background: #8ABE41;
+    box-shadow: 0px 0px 0px 0px;
+    gap: 10px;
+}
+
 #error h1 {
     color: #74A72E;
     font-size: 30px;
     font-weight: 600;
     letter-spacing: 3.2px;
     padding-left: 0;
-}
-
-/* ========== resposive styling ============== */
-
-/* break point 1 */
-
-@media (min-width: 700px) {
-
 }
