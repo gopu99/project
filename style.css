@@ -1,0 +1,902 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ========== END OF RESET ============== */
+
+
+/* ========== general layout and styling ============== */
+
+body {
+    font-family:'Poppins', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    line-height: normal;
+}
+
+header, main > section, footer {
+    padding: 0 60px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 50px 0 0 20px;
+}
+
+h2 {
+    padding: 10px 0;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h3 {
+    padding: 10px 0;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 180%;
+}
+
+main > section {
+    margin-top: 100px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+
+/* ========== header ============== */
+
+header {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    padding: 10px 60px;
+    gap: 30vw;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.16);
+
+}
+
+header > nav > ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+/* ========== footer ============== */
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 60px;
+}
+
+#social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#social p {
+    font-size: 16px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+footer h5 {
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+footer h6, footer li {
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+
+main + div {
+    width: 100vw;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.23);
+    margin-top: 60px;
+}
+
+/* ========== homepage main section ============== */
+
+/* section1 */
+
+
+.images {
+    width: 120px;
+    height: 418px;
+    overflow: hidden; /* Hide any overflow from the image */
+    border-radius: 23px;
+    display: flex; /* Enable flex layout for centering the image */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+
+}
+
+figure {
+    position: relative;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0 20px 0;
+    width: 100%;
+    height: 200px;
+    border-radius: 0px 0px 23px 23px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.0) 100%);
+}
+
+.figwrap {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    justify-content: right;
+    padding-right: 20px;
+}
+
+.figwrap p {
+    font-size: 0px;
+    font-weight: 500;
+    color: #FFF;
+}
+
+.figwrap img {
+    height: 0px;
+    padding-bottom: 12px;
+}
+
+figure .images, figure figcaption, figure .figwrap p, figure .figwrap img,.question div,.question div p {
+    transition: all 0.3s ease-in-out;
+}
+
+figure:hover .images {
+    width: 260px;
+}
+figure:hover figcaption {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.79) 100%);
+    font-size: 23px;
+}
+figure:hover .figwrap p {
+    font-size: 23px;
+}
+figure:hover .figwrap img {
+    height: 16px;
+}
+
+.fourimages {
+    display: flex;
+    gap: 20px;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.search {
+    display: flex;
+    align-items: center;
+    height: 274px;
+    justify-content: right;
+}
+#text {
+    width: 360px;
+    height: 60px;
+    background: #FFF;
+    box-shadow: -3px 4px 29px 0px rgba(0, 0, 0, 0.11);
+
+    color: #D4D5D9;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-left: 20px;
+
+    display: flex;
+    align-items: center;
+}
+#searchicon {
+    width: 80px;
+    height: 80px;
+    background: #BDD77E;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    width: 300px;
+    height: 60px;
+    border-radius: 38px;
+    background: #BDD77E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+    gap: 10px;
+}
+
+.button:hover {
+    box-shadow: -3px 4px 29px 0px #BDD77E;
+}
+
+.button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button p {
+    color:#FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.line {
+    width: 73px;
+    height: 6px;
+    border-radius: 13px;
+    background: #D4D5D9;
+    margin: 30px 0;
+}
+
+#section1 .main + div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 40px;
+}
+
+/* section2 who-are-we */
+
+#who-are-we {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#who-are-we section {
+    max-width: 50vw;
+}
+
+.explore a {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    gap: 6px;
+}
+.explore p {
+    color: #8ABE41;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.explore 
+
+#who-are-we section h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+#who-are-we section h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#bird {
+    padding: 30px 40px;
+}
+
+/* section3 we-provide */
+
+#we-provide {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+}
+
+#we {
+    display: flex;
+    color:#FFF;
+    width: 80vw;
+    border-radius: 43px;
+    background: #8ABE41;
+    padding: 40px 60px;
+    align-items: center;
+}
+
+#we ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 50%;
+}
+
+#we div {
+    width: 80%;
+}
+
+#we div h2 {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1.44px;
+}
+
+#we div .button {
+    width: 260px;
+    height: 45px;
+    background:#FFF;
+}
+
+#we div .button:hover {
+    box-shadow: 0px 4px 11px 2px rgba(255, 255, 255, 0.48);
+}
+
+#we div .button p {
+    font-size: 14px;
+    color: #82B43D;
+    padding-right: 10px;
+}
+
+#we ul li img {
+    padding: 5px;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+
+#we ul li h3 {
+    font-size: 20px;
+    padding-bottom: 0;
+}
+
+#we ul li p {
+    font-size: 14px;
+}
+
+/* section4 onlinecourses */
+
+#onlinecourses {
+    padding: 0;
+}
+
+#onlinecourses ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px 0;
+}
+
+#onlinecourses ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#onlinecourses ul li div {
+    width: 45px;
+    height: 3px;
+    background: rgba(138, 190, 65, 0.00);
+}
+
+#onlinecourses ul li:hover div {
+    background: #8ABE41;
+}
+
+#onlinecourses h2 {
+    text-align: center;
+}
+
+#onlinecourses ul li h3 {
+    padding-bottom: 5px;
+}
+
+
+#onlinecourses section {
+    background: rgba(138, 190, 65, 0.30);
+    padding: 60px 60px 240px 60px;
+    position: relative;
+    margin-bottom: 300px;
+}
+
+#onlinecourses section h4 {
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    float: left;
+}
+
+#onlinecourses section .violin {
+    position: absolute;
+    margin-left: 35%;
+}
+
+#onlinecourses section .violin {
+    border-radius: 32px;
+    background:#FFF;
+    box-shadow: 0px 4px 32px 0px rgba(0, 0, 0, 0.07);
+    width: 50%;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.violin .button {
+    height: 50px;
+    width: 260px;
+}
+
+/* section5 review */
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+#review p {
+    border-radius: 23px;
+    background:#FFF;
+    box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.13);
+    padding: 30px;
+    width: 30vw;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+span {
+    font-weight: 600;
+}
+
+/* section6 faq */
+
+#faq {
+    background: rgba(138, 190, 65, 0.30);
+    padding: 40px 0;
+    min-height: 340px;
+}
+
+#faq h2 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#faq ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    gap: 34px;
+}
+
+.question {
+    border-radius: 21px;
+    background: var(--major-project, #FFF);
+    padding: 18px 23px;
+    width: 60vw;
+}
+
+.question p {
+    font-size: 14px;
+}
+
+.question div {
+    background: #D3D3D3;
+    height: 0px;
+}
+
+.question:hover div {
+    height: 1px;
+}
+
+.question div + p {
+    color: #717171;
+    font-size: 0px;
+}
+
+.question:hover div + p {
+    font-size: 12px;
+}
+
+#vm a {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    padding: 30px 60px 0 0 ;
+}
+
+#faq div p {
+    color: #8ABE41;
+    font-size: 16px;
+}
+
+/* ========== courses page ============== */
+
+#coursesection{
+    margin-top: 0;
+}
+
+.bgimage {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 400px;
+}
+
+.bgimage h1 {
+    padding-right: 160px;
+    padding-left: 0;
+    font-family: 'Comic Neue', cursive;
+    font-size: 38px;
+    font-weight: 500;
+    letter-spacing: 3.84px;
+
+}
+
+.bgimage + div, #banner + div {
+    display: grid;
+    justify-items: center;
+}
+
+.bgimage + div div, #banner + div div {
+    display: flex;
+    gap: 140px;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 29px;
+    border: 2px solid rgba(0, 0, 0, 0.08);
+    background: var(--major-project, #FFF);
+    padding: 10px 40px;
+}
+
+.bgimage + div div p, #banner + div div p {
+    color: rgba(0, 0, 0, 0.38);
+    font-size: 16px;
+}
+
+#coursesection ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+#coursesection ul li {
+    border-radius: 22px;
+    background: #8ABE41;
+    padding: 5px 20px;
+    color: #FFF;
+}
+
+#coursesection ul li:hover {
+    background: #FFF;
+    border: 2px solid #8ABE41;
+    padding: 3px 18px;
+    color: #8ABE41;
+}
+
+
+#coursesection + ul li div {
+    width: 300px;
+    height: 200px;
+    border-radius: 21px 21px 0px 0px;
+    background: rgba(138, 190, 65, 0.24);
+    margin-bottom: 20px;
+
+}
+
+#coursesection + ul {
+    padding: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 50px;
+    background: rgba(189, 215, 126, 0.30);
+
+}
+
+#coursesection + ul li section h2, #class ul li section h2 {
+    font-size: 18px;
+    padding-bottom: 0px;
+}
+
+#coursesection + ul li section p, #class ul li section p {
+    font-size: 14px;
+}
+
+#coursesection + ul li section, #class ul li section {
+    border-radius: 21px;
+    background: var(--major-project, #FFF);
+    box-shadow: 0px 4px 87px 0px rgba(0, 0, 0, 0.13);
+
+    padding: 16px 16px 50px 16px;
+
+}
+
+/* ========== class page ============== */
+
+#classsection div:first-child {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+#classsection div:first-child p {
+    color: #72973E;
+    font-size: 16px;
+}
+
+#classsection div + div div {
+    width: 827px;
+    height: 379px;
+    border-radius: 16px;
+    background: rgba(138, 190, 65, 0.24);
+
+}
+
+#classsection div + div {
+    display: flex;
+    align-items: center;
+    gap: 10vw;
+    padding: 0 60px 20px 30px;
+}
+
+#classsection h2, #classsection h2 + p {
+    padding: 0 0 0 60px;
+}
+
+#classsection h2 {
+    font-size: 20px;
+}
+
+#classsection h2 + p {
+    font-size: 16px;
+}
+
+#class ul {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+#class ul p {
+    padding: 0;
+}
+
+#class ul li div {
+    width: 80px;
+    height: 60px;
+    border-radius: 88.5px;
+    background: rgba(138, 190, 65, 0.24);
+
+}
+
+#class ul li {
+    width: 300px;
+}
+
+/* ========== faq page ============== */
+
+#banner h1 {
+    padding: 0;
+}
+
+#banner {
+    display: grid;
+    justify-items: center;
+    padding-bottom: 40px;
+}
+
+#banner img {
+    padding-left: 20em;
+}
+
+#question {
+    display: grid;
+    justify-items: center;
+    gap: 30px;
+    padding: 40px 0 0 0;
+}
+
+#question li {
+    width: 60vw;
+    border-radius: 21px;
+    border: 1.5px solid #D4D5D9;
+    padding: 20px;
+}
+
+#question li div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.qst {
+    justify-content: space-between;
+}
+
+.answer div {
+    height: 1px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.23);
+    margin: 10px 0;
+}
+
+.answer p {
+    color: rgba(0, 0, 0, 0.56);
+}
+
+#question p {
+    font-size: 16px;
+}
+
+/* ========== aboutus page ============== */
+
+#aboutussection {
+    display: grid;
+    justify-items: center;
+}
+
+#aboutussection h1 {
+    padding: 0;
+}
+
+#aboutussection img {
+    padding-left: 600px;
+}
+
+#aboutussection + section p + h2 {
+    padding-top: 40px;
+}
+
+#aboutussection + section {
+    padding: 0 90px ;
+}
+
+#community {
+    background: rgba(138, 190, 65, 0.24);
+    padding: 60px;
+}
+
+#community h2 {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#community ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 30px;
+}
+
+
+#community ul li {
+    display: grid;
+    justify-items: center;
+    border-radius: 7px;
+    background: var(--major-project, #FFF);
+    width: 60%;
+    padding: 30px;
+}
+
+#community ul li div {
+    width: 100px;
+    height: 100px;
+    background-color: #8ABE41;
+    border-radius: 50%;
+}
+
+#community p {
+    font-size: 14px;
+}
+
+#span1 {
+    color: #8ABE41;
+}
+
+#span2 {
+    color: #33A8FF;
+}
+
+#getintouch {
+    padding: 0 90px;
+}
+
+/* ========== 404 page ============== */
+
+#error {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15vw;
+    margin-top: 30vh;
+}
+
+#error .button img {
+    transform: rotate(180deg);
+}
+
+#error .button {
+    border-radius: 16px;
+    background: #8ABE41;
+    box-shadow: 0px 0px 0px 0px;
+    gap: 10px;
+}
+
+#error h1 {
+    color: #74A72E;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 3.2px;
+    padding-left: 0;
+}
